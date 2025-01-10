@@ -3,11 +3,101 @@
 <html>
 
 <head>
+	<title>HTML Assignment 3</title>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		.middle{
+			width: 100%;
+			border: 1px solid black;
+			margin-bottom: 40px
+		}
+		.center{
+			text-align: center;
+		}
+		.right{
+			text-align: right;
+		}
+		td{
+			border: 1px solid black;
+		}
+		#table-2 td{
+			padding: 8px;
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1 style="text-align: center">HTML Assignment #3</h1>
+	<table id="table-1" class="middle">
+		<tbody>
+			<tr id="t11">
+				<td>left</td>
+				<td class="center">center</td>
+				<td class="right">right</td>
+			</tr>
+			<tr id="t12">
+				<td>left</td>
+				<td class="center">center</td>
+				<td class="right">right</td>
+			</tr>
+			<tr id="t13">
+				<td>left</td>
+				<td class="center">center</td>
+				<td class="right">right</td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="table-2" class="middle">
+		<tbody>
+			<tr id="t21">
+				<td colspan=6></td>
+			</tr>
+			<tr>
+				<td rowspan=4></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan=3 style="border-bottom: none"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan=3 style="border-top: none"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan=6></td>
+			</tr>
+		</tbody>
+	</table>
+	<table id="table-3" class="middle">
+		<tbody>
+			<tr>
+				<td colspan=3 style="background-color: green; padding: 8px"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td id="t-image" style="width: 200px"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan=3 style="background-color: blue; padding: 8px"></td>
+			</tr>
+		</tbody>
+	</table>
     <script type="text/javascript" src="./script.js">
 </script>
 
